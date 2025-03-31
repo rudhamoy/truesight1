@@ -24,7 +24,7 @@ jobs:
       - name: Set Up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18  # Adjust based on your project's Node version
+          node-version: 22.13.0  # Adjust based on your project's Node version
 
       - name: Install Dependencies
         run: npm install
@@ -39,4 +39,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: electron-build-${{ runner.os }}
-          path: dist/  # Adjust this to your output folder
+          path: build/  # Adjust this to your output folder
