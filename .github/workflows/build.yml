@@ -24,7 +24,7 @@ jobs:
       - name: Set Up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22.13.0  # Adjust based on your project's Node version
+          node-version: 20.0.0 # Adjust based on your project's Node version
 
       - name: Install Dependencies
         run: npm install
